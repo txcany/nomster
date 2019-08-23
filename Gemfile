@@ -80,3 +80,5 @@ gem 'simple_form'
 gem 'font-awesome-rails'
 
 gem 'devise'
+
+gem 'geocoder', '~> 1.5', '>= 1.5.1'
