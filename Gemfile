@@ -82,3 +82,5 @@ gem 'font-awesome-rails'
 gem 'devise'
 
 gem 'geocoder', '~> 1.5', '>= 1.5.1'
+
+gem "figaro"
