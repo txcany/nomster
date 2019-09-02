@@ -12,6 +12,14 @@
         <% end %>
         <br />
       </div>
+      <div class="col-12 col-md-3">
+        <% if place.photos.present? %>
+          <div class="photos-index float-right">
+           
+              <img src="<%= place.photos.last.picture %>" style="max-width: 300px; max-height: 500px" class="index-image-size">
+          </div>
+        <% end %>
+      </div>
     </div>
 
     <% if place.comments.present? %>
@@ -26,3 +34,9 @@
     <% end %>
   </div>
 <% end %>
+
+<dlv class="clear"></dlv>
+
+<div class="col-10 offset-1">
+  <%= will_paginate @places, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %>
+</div>
